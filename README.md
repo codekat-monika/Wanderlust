@@ -1,95 +1,64 @@
 # 🏡 Wanderlust — Full Stack Accommodation Platform
 
-> An Airbnb-style property listing platform where users can discover, list, and review accommodations from around the world.
+A full-stack web application inspired by Airbnb — built as a learning project to understand end-to-end web development with Node.js, Express, and MongoDB.
 
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
-
-🔗 [Live Demo](#) &nbsp;|&nbsp; 📁 [GitHub Repo](#)
+📁 [GitHub Repo](#)
 
 ---
 
-## 📌 Overview
+## 📌 About The Project
 
-Wanderlust is a full-stack web application that replicates core features of Airbnb. Users can sign up, create and manage property listings, upload images, leave reviews, and explore listings on an interactive map. Built with a clean MVC architecture for scalability and maintainability.
+This is one of my first full-stack projects. I built Wanderlust to understand how real-world web applications work — from user authentication and database design to file uploads and third-party API integration. It helped me connect all the dots between frontend, backend, and database.
 
 ---
 
-## ✨ Features
+## 🏠 What It Can Do
 
-- 🔐 **Secure Authentication** — Signup/login with Passport.js, password salting & hashing
-- 🏠 **Listing Management** — Create, edit, and delete property listings with image uploads
-- ⭐ **Reviews & Ratings** — Post and delete reviews on any listing
-- 🗺️ **Map Integration** — Geocoding API to pinpoint listing locations on an interactive map
-- 🔍 **Search & Filter** — Find listings using MongoDB indexing and tokenization
-- ☁️ **Cloud Image Storage** — Images uploaded via Multer and stored on Cloudinary
-- ✅ **Validation** — Client-side (Bootstrap) and server-side (Joi) form validation
-- 📱 **Responsive UI** — Clean, minimal design that works across all devices
-- 🔒 **Session Management** — Persistent login sessions using Express Sessions
+- Sign up / log in securely and stay logged in across sessions
+- Create, edit, and delete property listings with photos
+- Browse listings and explore their location on an interactive map
+- Leave reviews and ratings on any listing
+- Search and filter listings easily
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Layer | Technology |
-|-------|-----------|
-| Frontend | HTML5, CSS3, JavaScript, Bootstrap, EJS |
-| Backend | Node.js, Express.js |
-| Database | MongoDB, Mongoose |
-| Authentication | Passport.js |
-| Image Storage | Multer, Cloudinary |
-| Validation | Joi |
-| Maps | Geocoding API |
-| Session | Express Sessions |
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB, Mongoose
+- **Frontend:** HTML, CSS, JavaScript, Bootstrap, EJS
+- **Authentication:** Passport.js
+- **Image Storage:** Multer + Cloudinary
+- **Maps:** Geocoding API
+- **Sessions:** Express Sessions
+- **Validation:** Joi
 
 ---
 
-## 🏗️ Architecture
-
-```
-Wanderlust/
-├── models/          # Mongoose schemas (User, Listing, Review)
-├── routes/          # Express route handlers
-├── controllers/     # Business logic (MVC controllers)
-├── views/           # EJS templates
-│   ├── listings/
-│   ├── reviews/
-│   └── users/
-├── public/          # Static assets (CSS, JS, images)
-├── middleware/      # Auth & validation middleware
-├── utils/           # Helper functions & error handling
-├── app.js           # Main entry point
-└── cloudConfig.js   # Cloudinary configuration
-```
-
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-- Node.js (v14+)
-- MongoDB (local or Atlas)
-- Cloudinary account
-
-### Installation
+## 🚀 How To Run Locally
 
 ```bash
-# Clone the repository
+# Clone the repo
 git clone https://github.com/your-username/wanderlust.git
 cd wanderlust
 
 # Install dependencies
 npm install
 
-# Create .env file
+# Create a .env file and add your keys (see below)
 touch .env
+
+# Start the server
+node app.js
 ```
 
-### Environment Variables
+Open `http://localhost:8080` in your browser.
 
-Create a `.env` file in the root directory:
+---
+
+## 🔑 Environment Variables
+
+Create a `.env` file in the root folder and add:
 
 ```env
 ATLASDB_URL=your_mongodb_atlas_url
@@ -100,30 +69,33 @@ CLOUD_API_SECRET=your_cloudinary_api_secret
 MAP_TOKEN=your_geocoding_api_token
 ```
 
-### Run the App
+---
 
-```bash
-node app.js
-# or
-nodemon app.js
+## 📁 Folder Structure
+
+```
+wanderlust/
+├── models/          # Mongoose schemas (User, Listing, Review)
+├── routes/          # Express routes
+├── controllers/     # Route logic (MVC)
+├── views/           # EJS templates
+├── public/          # Static files (CSS, JS)
+├── middleware/      # Auth & validation middleware
+├── app.js           # Main entry point
+└── cloudConfig.js   # Cloudinary setup
 ```
 
-Visit `http://localhost:8080` in your browser.
+---
+
+## 🌱 What I Learned
+
+- How to structure a full-stack app using MVC architecture
+- User authentication and session management with Passport.js
+- Connecting MongoDB with Mongoose for database operations
+- Handling file uploads and storing images on Cloudinary
+- Integrating third-party APIs (maps, geocoding)
+- Writing server-side validation with Joi
 
 ---
 
-## 📸 Screenshots
-
-> *(Add screenshots of your homepage, listing page, and map view here)*
-
----
-
-## 🙏 Acknowledgements
-
-Special thanks to **Shradha Khapra Ma'am** for guidance throughout this project.
-
----
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
+> 💬 This is a learning project — feedback and suggestions are welcome!
