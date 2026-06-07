@@ -108,15 +108,6 @@ Open:
 http://localhost:8080
 ```
 
-## Screenshots
-
-Add screenshots of:
-
-* Home Page
-* Listing Details Page
-* Create Listing Page
-* Map View
-
 ## What I Learned
 
 Through this project, I learned:
@@ -133,6 +124,3 @@ Through this project, I learned:
 
 This project was built as part of my web development learning journey. Special thanks to Shradha Khapra Ma'am for the guidance and resources.
 
-## License
-
-This project is licensed under the MIT License.
