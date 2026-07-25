@@ -1,6 +1,6 @@
 # Wanderlust
 
-A full-stack accommodation listing web application inspired by Airbnb. Users can create property listings, upload images, explore locations on a map, and leave reviews. I built this project to gain hands-on experience with backend development, database management, authentication, and third-party API integration.
+A full-stack accommodation listing web application inspired by Airbnb. Users can create property listings, upload images, and leave reviews. I built this project to gain hands-on experience with backend development, database management, authentication, and third-party API integration.
 
 ## Features
 
@@ -8,7 +8,6 @@ A full-stack accommodation listing web application inspired by Airbnb. Users can
 * Create, edit, and delete property listings
 * Upload and manage listing images with Cloudinary
 * Add and delete reviews for listings
-* Interactive map integration using a geocoding API
 * Search and browse listings
 * Server-side validation using Joi
 * Session-based authentication and authorization
